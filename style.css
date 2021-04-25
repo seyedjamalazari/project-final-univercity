@@ -221,7 +221,7 @@ a {
     }
 
     #topmenu ul a {
-        padding: 0 3px;
+        padding: 0 30px;
         margin: 0 2px;
         border: none;
         background-color: #444;
@@ -235,7 +235,7 @@ a {
         padding-top: 0;
     }
 
-}
+
 #cats{
     position: static;
     width: 100%;
@@ -293,7 +293,7 @@ a {
 
 }
 
-
+}
 
 
 
@@ -320,13 +320,3 @@ a {
 
 
 
-
-
-
-
-
-@media screen and (min-width:720px) {}
-
-@media screen and (min-width:960px) {}
-
-@media screen and (min-width:1140px) {}
