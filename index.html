@@ -17,7 +17,33 @@
                 
             });
             
+      
+
+
+        $("#button2").click(function (){
+            if($("#cats").css("right")=="-300px"){
+                $("#cats").css("right","0");
+                $("#topmenu ul").slideUp();
+            }else{
+                $("#cats").css("right","-300px");          
+            }           
         });
+           
+        $("#cats .plus").click(function(event){
+            $(this).parent().siblings("ul").slideToggle();
+            event.preventDefault();
+
+        });
+
+
+
+
+       
+        });  
+
+
+
+
     </script>
 </head>
 <body>
@@ -53,11 +79,83 @@
             </div>
         </div>
     </div>
-
-
-
 </header>
     
+
+<nav id="cats">
+    <ul>
+        <li class="item">
+            <a href="#">گل <span class="plus">+</span></a>
+            <ul class="submenu">
+                <li class="subitem">
+                    <a href="#">شاخه بریده <span class="plus">+</span></a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">زربزا</a></li>
+                        <li class="subitem"><a href="#">رز</a></li>
+                        <li class="subitem"><a href="#">آنتریوم</a></li>
+                        <li class="subitem"><a href="#">مریم</a></li>
+                        <li class="subitem"><a href="#">نرگس</a></li>
+                        <li class="subitem"><a href="#">زنبق</a></li>
+                        <li class="subitem"><a href="#">آلسترومریا</a></li>
+                        <li class="subitem"><a href="#">لیلیوم</a></li>
+                        <li class="subitem"><a href="#">کاله</a></li>
+                        <li class="subitem"><a href="#">استریزیا</a></li>
+                    </ul>
+                  </li>
+                  <li class="subitem">
+                    <a href="#">شاخه بریده <span class="plus">+</span></a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">شفلرا</a></li>
+                        <li class="subitem"><a href="#">شمعدانی</a></li>
+                        <li class="subitem"><a href="#">آگلنما</a></li>
+                        <li class="subitem"><a href="#">مرجان</a></li>
+                        <li class="subitem"><a href="#">سیکاس</a></li>
+                       
+                       
+                    </ul>
+                  </li>
+
+
+           </ul>
+           <li class="item">
+            <a href="#">لوازم گل فروشی  <span class="plus">+</span></a>
+            <ul class="submenu">
+                <li class="subitem">
+                    <a href="#">انواع روبان ها <span class="plus">+</span></a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">1</a></li>
+                        <li class="subitem"><a href="#">2</a></li>
+                        <li class="subitem"><a href="#">3</a></li>
+                        <li class="subitem"><a href="#">4</a></li>
+                        <li class="subitem"><a href="#">5</a></li>
+                        <li class="subitem"><a href="#">6</a></li>
+                        <li class="subitem"><a href="#">7</a></li>
+                        <li class="subitem"><a href="#">8</a></li>
+                        <li class="subitem"><a href="#">9</a></li>
+                        <li class="subitem"><a href="#">10</a></li>
+                    </ul>
+                  </li>
+                  <li class="subitem">
+                    <a href="#">انواع سبد ها <span class="plus">+</span></a>
+                    <ul class="submenu">
+                        <li class="subitem"><a href="#">1</a></li>
+                        <li class="subitem"><a href="#">2</a></li>
+                        <li class="subitem"><a href="#">3</a></li>
+                        <li class="subitem"><a href="#">4</a></li>
+                        <li class="subitem"><a href="#">5</a></li>
+                       
+                       
+                    </ul>
+                  </li>
+
+
+           </ul>
+
+
+
+
+    </ul>
+</nav>
 
 
 
