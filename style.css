@@ -67,8 +67,9 @@ a {
 }
 
 #topmenu a:hover {
-    background-color: #ec5;
+    background-color: rgb(45, 187, 140);
     color: #222;
+    border-radius: 50px 5px;
 }
 
 #button1 {
@@ -187,6 +188,134 @@ a {
     background-color: #eee;
 }
 
+#content {
+    margin-top: 15px;
+}
+
+#content .group {
+    background-color: white;
+    box-shadow: 0 1px 2px #aaa;
+    margin-bottom: 30px;
+}
+
+#content .group h2 {
+    text-align: center;
+    background-color: #f4f6f8;
+    line-height: 240%;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#content article {
+    margin: 15px auto;
+    text-align: center;
+    max-width: 340px;
+    box-shadow: 0 0 0 1px #ccc;
+
+}
+
+#content article:hover {
+    box-shadow: 0 3px 10px 2px #ccc;
+
+}
+
+#content .image {
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+#content .imagelabel {
+    background-color: red;
+    color: white;
+    width: 150px;
+    position: absolute;
+    font-size: 18px;
+    opacity: 0.8;
+    top: 15px;
+    left: -45px;
+    transform: rotate(-45deg);
+}
+
+#content .image img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#content article:hover .image img {
+    transform: scale(1.2);
+}
+
+#content article h3 {
+    color: black;
+    text-align: justify;
+    margin: 10px 8px 0 8px;
+    font-weight: normal;
+    font-size: 16px;
+    height: 70px;
+    overflow: hidden;
+}
+
+#content .rate {
+    font-size: 14px;
+    margin: 10px;
+    text-align: right;
+    color: black;
+}
+
+#content .rate span:first-child {
+    background: #49e;
+    padding: 3px 4px 1px 4px;
+    border-radius: 3px;
+    margin-left: 8px;
+    color: white;
+}
+
+#content .star {
+    height: 20px;
+    width: 20px;
+    vertical-align: -4px;
+}
+
+#content .price {
+    font-size: 20px;
+    color: #e22;
+    margin: 10px;
+}
+
+#content .buy {
+    display: block;
+    background-color: #49F;
+    color: #333;
+    font-size: 20px;
+    line-height: 200%;
+    transition: 0.2s;
+}
+
+#content .buy:hover {
+    background-color: #24a;
+    color: white;
+}
+#sidebar{
+    margin-top: 15px;
+}
+#sidebar .group{
+    background-color: white;
+    box-shadow: 0 1px 2px #ccc;
+    margin-bottom: 30px;
+}
+#sidebar .group h2{
+    text-align: center;
+    background-color: #f7f9fa;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+
+
 
 @media screen and (min-width:720px) {
     #logo {
@@ -236,87 +365,93 @@ a {
     }
 
 
-#cats{
-    position: static;
-    width: 100%;
-    box-shadow: none;
-    border-bottom: 1px solid #ccc;
-    font-size: 15px;
-    background-color: #f4f6f8;
+    #cats {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-bottom: 1px solid #ccc;
+        font-size: 15px;
+        background-color: #f4f6f8;
+    }
+
+    #cats .plus {
+        display: none;
+    }
+
+    #cats>ul {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    #cats .item {
+        float: right;
+    }
+
+    #cats a {
+        border: none;
+        padding: 0 20px;
+    }
+
+    #cats a:hover {
+        background-color: transparent;
+    }
+
+    #cats li:hover {
+        background-color: white;
+    }
+
+    #cats li:hover>ul {
+        display: block !important;
+    }
+
+    #cats .submenu {
+        width: 200px;
+
+        position: absolute;
+        border: 1px solid #ccc;
+        border-top: none;
+        line-height: 240%;
+        background-color: #f3f3f3;
+        z-index: 1;
+    }
+
+    #cats .subitem {
+        position: relative;
+        border-top: 1px solid #ccc;
+    }
+
+    #cats .submenu .submenu {
+        top: -1px;
+        background-color: #f7f7f7;
+        right: 100%;
+    }
+
+    #cats .subitem a {
+        padding: 0 15px !important;
+
+    }
+
+    #content article h3 {
+        font-size: 14px;
+    }
+
+    #content .price {
+        font-size: 20px;
+        margin: 5px;
+    }
+
 }
-#cats .plus{
-    display: none;
+
+
+
+
+
+@media screen and (min-width:1140px){
+    main > div{
+        display: flex;
+    }
+
+    main > div > div{
+        order:2;
+    }
 }
-#cats >ul{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-#cats .item{
-    float: right;  
-}
-
-#cats a{
-    border: none;
-    padding: 0 20px;
-}
-#cats a:hover{
-    background-color: transparent;
-}
-#cats li:hover{
-    background-color: white;
-}
-#cats li:hover>ul{
-    display: block !important;
-}
-#cats .submenu{
-    width: 200px;
-   
-    position: absolute;
-    border: 1px solid #ccc;
-    border-top: none;
-    line-height: 240%;
-    background-color: #f3f3f3;
-    z-index: 1;
-}
-#cats .subitem{
-    position: relative;
-    border-top: 1px solid #ccc;
-}
-#cats .submenu .submenu{
-    top: -1px;
-    background-color: #f7f7f7;
-    right: 100%;
-}
-
-#cats .subitem a{
-    padding: 0 15px !important;
-
-}
-
-}
-
-
-
-
-
-@media screen and (min-width:1140px) {}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
