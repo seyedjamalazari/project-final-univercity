@@ -298,20 +298,97 @@ a {
     background-color: #24a;
     color: white;
 }
-#sidebar{
+
+#sidebar {
     margin-top: 15px;
 }
-#sidebar .group{
+
+#sidebar .group {
     background-color: white;
     box-shadow: 0 1px 2px #ccc;
     margin-bottom: 30px;
 }
-#sidebar .group h2{
+
+#sidebar .group h2 {
     text-align: center;
     background-color: #f7f9fa;
     font-size: 16px;
     font-weight: normal;
+    border-bottom: 1px solid #eee;
+    line-height: 240%;
+
 }
+
+#sidebar article {
+    text-align: center;
+    margin: 15px auto;
+    max-width: 340px;
+
+    box-shadow: 0 0 0 1px #ddd;
+    overflow: hidden;
+    position: relative;
+}
+
+#sidebar article:hover {
+    box-shadow: 0 3px 10px 2px #ccc;
+}
+
+#sidebar .imagelabel {
+    background-color: red;
+    color: white;
+    width: 150px;
+    opacity: 0.8;
+    position: absolute;
+    font-size: 18px;
+    top: 25px;
+    left: -35px;
+    transform: rotate(-45deg);
+}
+
+#sidebar .discount {
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 38px;
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    padding-top: 12px;
+
+}
+
+#sidebar article img {
+    display: block;
+    width: 100%;
+}
+
+#sidebar article .popup {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    bottom: 0;
+}
+
+#sidebar article .comment {
+    padding: 5;
+    height: 65px;
+    font-size: 16px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+#sidebar article .price {
+    color: yellow;
+    font-size: 22px;
+}
+
+
+
 
 
 
@@ -440,18 +517,45 @@ a {
         margin: 5px;
     }
 
+    #sidebar article .comment {
+        font-size: 15px;
+    }
+
+    #sidebar article .price {
+        font-size: 20px;
+    }
+
+    #sidebar article .popup {
+        bottom: -110px;
+        transition: 0.4s;
+    }
+
+    #sidebar article:hover .popup {
+        bottom: 0;
+
+    }
+
+    #sidebar article a:hover .imagelabel {
+        display: none;
+    }
+    #sidebar article a:hover .discount{
+        display: none;
+    }
+
 }
 
+@media screen and (min-width:1140px) {}
 
 
 
 
-@media screen and (min-width:1140px){
-    main > div{
+
+@media screen and (min-width:1140px) {
+    main>div {
         display: flex;
     }
 
-    main > div > div{
-        order:2;
+    main>div>div {
+        order: 2;
     }
 }
