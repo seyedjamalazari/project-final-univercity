@@ -387,8 +387,28 @@ a {
     font-size: 22px;
 }
 
-
-
+#contact{
+    background-color: #667;
+    color: white;
+}
+#contact ul{
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contact li{
+    padding: 10px 30px;
+}
+#contact .mail , #contact .phone{
+    direction: ltr;
+}
+#contact .mail img ,#contact .phone img{
+    vertical-align: bottom;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
 
 
 
